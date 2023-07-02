@@ -1,11 +1,11 @@
-CREATE DATABASE galaxy;
-USE galaxy;
-
+CREATE DATABASE june_7th;
+USE june_7th;
+-- creating database galaxy
 CREATE TABLE star_systems (
   star_system_name varchar(30),star_system_type varchar(30),star_system_age bigint,star_system_distance double,star_system_constellation varchar(50),
   star_system_no_of_planets int,star_system_no_of_moons int,star_system_no_of_stars int,star_system_color varchar(20),star_system_temperature int);
 DESC star_systems;
-
+-- Adding star information
 ALTER TABLE star_systems ADD COLUMN star_system_id int;
 ALTER TABLE star_systems ADD COLUMN distance_from_earth double;
 ALTER TABLE star_systems ADD COLUMN planetry_system varchar(30);
